@@ -1,0 +1,18 @@
+@mixin theme($bg: color(_White), $txt: color(_Black)) {
+	.dark-mode & {
+		background-color: $txt;
+		color: $bg;
+	}
+	.light-mode & {
+		background-color: $bg;
+		color: $txt;
+	}
+	// @media (prefers-color-scheme: dark) {
+	// 	background-color: $txt;
+	// 	color: $bg;
+	// }
+	// @media (prefers-color-scheme: light) {
+	// 	background-color: $bg;
+	// 	color: $txt;
+	// }
+}

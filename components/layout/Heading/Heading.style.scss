@@ -1,0 +1,48 @@
+@import '~tools';
+.page-heading {
+	display: flex;
+	align-items: center;
+	min-height: 33.33vh;
+	padding-top: grid(3);
+	padding-bottom: grid(1);
+
+	> .row {
+		margin: 0;
+	}
+	@media #{$small-only} {
+		min-height: 50vh;
+		padding-top: 3em;
+	}
+	h1 {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-wrap: wrap;
+		transform: translateY(calc(var(--scroll-top-px) * -0.25));
+		span {
+			position: relative;
+			display: block;
+			color: white;
+			padding: 0.15em;
+			&:first-child {
+				padding-left: 0.25em;
+				// transform: translateX(-0.1em);
+				margin-left: -0.25em;
+			}
+			&:last-child {
+				padding-right: 0.25em;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: black;
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+query {
+	repositoryOwner(login: "silvandiepen") {
+		repository(name: "silvandiepen-blog") {
+			object(expression: "master:") {
+				... on Tree {
+					entries {
+						name
+						object {
+							... on Blob {
+								text
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

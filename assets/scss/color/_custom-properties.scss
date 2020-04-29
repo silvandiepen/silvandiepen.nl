@@ -1,0 +1,24 @@
+@import '~guyn';
+
+@if output('css') {
+	:root {
+		@each $color-name, $color-value in $guyn-colors {
+			$contraColor: contra($color-value);
+			--#{to-lower-case($color-name)}: #{$color-value};
+			--#{to-lower-case($color-name)}-h: #{hue($color-value)};
+			--#{to-lower-case($color-name)}-s: #{saturation($color-value)};
+			--#{to-lower-case($color-name)}-l: #{lightness($color-value)};
+			--#{to-lower-case($color-name)}-contra: #{$contraColor};
+		}
+	}
+	@each $color-name, $color-value in $guyn-colors {
+		.bg--#{to-lower-case($color-name)} {
+			--bg: #{$color-value};
+			--txt: #{contra($color-value)};
+		}
+		.txt--#{to-lower-case($color-name)} {
+			--txt: #{$color-value};
+			--bg: #{contra($color-value)};
+		}
+	}
+}

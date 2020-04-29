@@ -1,0 +1,87 @@
+.content {
+	padding: grid(1);
+	@include min-(padding, 1, $mobile-padding);
+}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+.content code {
+	background-color: color(_White);
+	color: color(_Black);
+	font-size: 0.8em;
+	font-family: 'IBM Plex Mono', monospace;
+	line-height: 1.5;
+	padding: 0.5rem;
+}
+.content pre code {
+	display: block;
+	width: calc(100% + 2rem);
+
+	background-color: color(_Black);
+	color: color(_White);
+	font-size: 1rem;
+	padding: 1rem;
+	margin-left: -1rem;
+}
+
+.content hr {
+	height: 2px;
+	border: none;
+	background-color: currentColor;
+	color: currentColor;
+	margin: 1em 0;
+	padding: 0;
+}
+.content-row {
+	width: calc(100% + #{grid(1)});
+	margin-left: -grid(0.5);
+	margin-top: grid(1);
+	.column {
+		padding: grid(0.5);
+		p {
+			opacity: 0.7;
+		}
+		h2 {
+			display: inline-block;
+			border: 2px solid red;
+			background-color: color(Red);
+			padding: 0 0.25em;
+		}
+	}
+}
+
+ol:not([class]) {
+	counter-reset: list;
+	li {
+		position: relative;
+		counter-increment: list;
+		padding-left: 1em;
+		&::before {
+			content: counter(list) '.';
+			position: absolute;
+			left: 0;
+			display: inline-block;
+			min-width: 1em;
+		}
+	}
+}
+.large-link {
+	display: block;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	@media #{$small-only} {
+		font-size: 1.5em;
+	}
+}
+ul:not([class]) {
+	display: flex;
+	flex-direction: column;
+	// border: 1px solid red;
+	li {
+		padding-left: 2em;
+		&::before {
+			content: '\2014';
+			margin-right: 0.5em;
+		}
+	}
+}

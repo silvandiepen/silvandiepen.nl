@@ -1,0 +1,54 @@
+// Basics
+@import 'tools/pre';
+@import 'typography/embed';
+
+// Define output settings for project
+$output: set-output(css, true);
+
+// Output the whole framework
+@import '~henris';
+
+// Defined settings
+@import 'tools/post';
+
+// Theme
+@import 'typography/index';
+@import 'components/index';
+@import 'color/index';
+
+body,
+html {
+	background-color: color(_Black);
+	font-family: 'Barlow', sans-serif;
+	main {
+		background-color: color(_White);
+	}
+
+	.light main {
+		background-color: color(White);
+		color: color(Black);
+	}
+	.dark main {
+		background-color: color(White);
+		color: color(Black);
+	}
+}
+
+@each $color-name, $color-value in $colors {
+	.background--#{to-lower-case($color-name)} {
+		--bg: #{$color-value};
+		--bg-r: #{red($color-value)};
+		--bg-g: #{green($color-value)};
+		--bg-b: #{blue($color-value)};
+		--bg-h: #{hue($color-value)};
+		--bg-s: #{saturation($color-value)};
+		--bg-l: #{lightness($color-value)};
+		--text: #{contra($color-value)};
+		background-color: #{$color-value};
+		background-image: linear-gradient(
+			to right bottom,
+			#{$color-value},
+			lighten($color-value, 10%)
+		);
+	}
+}
