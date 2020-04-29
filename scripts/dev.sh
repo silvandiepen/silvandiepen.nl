@@ -1,5 +1,5 @@
 # copy dev config to the current .env (which is used in nuxt.config.js)
-cp ./env/.env.dev ./.env
+cp ./config/.env.dev .env
 
 # node env
 export NODE_ENV=development
