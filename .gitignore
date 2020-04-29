@@ -22,4 +22,6 @@ static/icons
 
 # Environmental
 .env.dev
+# .env.prd
+.env.tst
 .env
