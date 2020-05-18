@@ -11,12 +11,12 @@
 		<section class="blocks blocks--height-half">
 			<Block size="medium">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/parque-chame_black.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_black.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--black">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/parque-chame_white.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_white.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--orange" />
@@ -26,7 +26,7 @@
 
 			<Block size="small" class="background--dark">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/parque-chame_lines.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_lines.svg"
 				/>
 			</Block>
 			<Block size="xsmall" class="background--white" />
@@ -46,13 +46,13 @@
 		<section class="blocks blocks--height-half">
 			<Block size="small" class="background--white">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/houseinspace-logo.png"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo.png"
 				/>
 			</Block>
 			<Block size="small" class="background--skyblue" />
 			<Block size="xsmall" class="background--black">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/houseinspace-icon.png"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-icon.png"
 				/>
 			</Block>
 			<Block size="xsmall" class="background--skybluelight" />
@@ -60,12 +60,12 @@
 
 			<Block size="medium" class="background--black">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/houseinspace-logo-white.png"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo-white.png"
 			/></Block>
 			<Block size="xsmall" class="background--white" />
 			<Block size="small" class="background--red">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/houseinspace-logo-lines.png"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo-lines.png"
 				/>
 			</Block>
 			<Block size="xsmall" class="background--blue" />
@@ -85,12 +85,12 @@
 		<section class="blocks blocks--height-half">
 			<Block size="medium">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/resail_normal.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_normal.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--black">
 				<img
-					src=" https://api.silvandiepen.nl/wp-content/uploads/2019/09/resail_white.svg"
+					src=" https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_white.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--skyblue" />
@@ -100,7 +100,7 @@
 
 			<Block size="small" class="background--skyblue">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/resail_oncolor.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_oncolor.svg"
 				/>
 			</Block>
 			<Block size="xsmall" class="background--white" />
@@ -120,12 +120,12 @@
 		<section class="blocks blocks--height-half">
 			<Block size="small">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kraber_icon.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_icon.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--black">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kraber_icon-white.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_icon-white.svg"
 				/>
 			</Block>
 			<Block size="small" class="background--red" />
@@ -135,12 +135,12 @@
 
 			<Block size="small" class="background--white">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kraber_text.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_text.svg"
 				/>
 			</Block>
 			<Block size="medium" class="background--white">
 				<img
-					src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kraber_logo.svg"
+					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_logo.svg"
 				/>
 			</Block>
 			<Block size="xsmall" class="background--red" />

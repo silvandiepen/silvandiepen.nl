@@ -8,25 +8,25 @@
 		</Heading>
 		<Content>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/peer1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/peer1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/orange1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/orange1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/tomato1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/tomato1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/ui1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/ui1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kiwano1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kiwano1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/apple1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/apple1.jpg"
 			/>
 			<img
-				src="https://api.silvandiepen.nl/wp-content/uploads/2019/09/kiwi1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kiwi1.jpg"
 			/>
 		</Content>
 	</main>

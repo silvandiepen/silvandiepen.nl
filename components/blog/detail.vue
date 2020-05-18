@@ -4,24 +4,25 @@
 			<h1>{{ article.title }}</h1>
 		</Heading>
 		<Content v-if="article" class="background--beige">
-			<Markdown :source="article.content" />
+			<!-- <Markdown :source="article.content" /> -->
+			{{ article.content }}
 		</Content>
 	</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import Markdown from '@sil/markdown';
+import { articleType } from '@/types';
 import { Heading, Content } from '@/components';
 
 export default Vue.extend({
 	components: {
 		Heading,
-		Markdown,
+		// Markdown,
 		Content
 	},
 	computed: {
-		article() {
+		article(): articleType {
 			return this.$store.getters['articles/getArticle'](
 				this.$route.params.article
 			);

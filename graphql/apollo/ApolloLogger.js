@@ -15,6 +15,7 @@ const defaultLogger = ({
 		console.log(
 			`[Operation] apollo ${operationType} ${operation.operationName}`
 		);
+		console.log(graphQLErrors);
 	}
 
 	if (response && !opts.onlyErrors) {

@@ -8,13 +8,13 @@ import ApolloLogger from './ApolloLogger';
 export default () => {
 	const loggerLink =
 		process.env.NODE_ENV !== 'production' ? [new ApolloLogger()] : [];
-
 	const httpLink = new HttpLink({
 		uri: GRAPHQL_API,
 		credentials: 'same-origin'
 	});
 
 	const authLink = setContext((_, { headers }) => {
+		// console.log(process.env.GITHUB_API_KEY);
 		const token = process.env.GITHUB_API_KEY
 			? process.env.GITHUB_API_KEY
 			: null;

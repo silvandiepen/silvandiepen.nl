@@ -119,28 +119,28 @@ export default Vue.extend({
 					color: 'blue',
 					title: 'Chami',
 					image:
-						'https://api.silvandiepen.nl/wp-content/uploads/2019/09/chami.png'
+						'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/chami.png'
 				},
 				{
 					link: '#',
 					color: 'brown',
 					title: 'Chernobyl',
 					image:
-						'https://api.silvandiepen.nl/wp-content/uploads/2019/09/1526-1024x683.jpg'
+						'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/1526-1024x683.jpg'
 				},
 				{
 					link: '#',
 					color: 'skyblue',
 					title: 'Ice Cream',
 					image:
-						'https://api.silvandiepen.nl/wp-content/uploads/2019/09/icecream-color-06-1024x1024.png'
+						'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/icecream-color-06-1024x1024.png'
 				},
 				{
 					link: '#',
 					color: 'yellow',
 					title: 'Bananana',
 					image:
-						'https://api.silvandiepen.nl/wp-content/uploads/2019/09/banana1-1024x1024.jpg'
+						'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/banana1-1024x1024.jpg'
 				}
 			]
 		};

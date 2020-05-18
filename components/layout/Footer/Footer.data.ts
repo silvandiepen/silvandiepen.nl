@@ -21,7 +21,7 @@ export const NavigationData: any = [
 			{
 				name: 'Get in touch!',
 				link: '/about/contact',
-				active: false
+				active: true
 			}
 		]
 	},
@@ -112,7 +112,7 @@ export const NavigationData: any = [
 			{
 				name: "Logo's",
 				link: '/logos',
-				active: false
+				active: true
 			}
 		]
 	},
@@ -184,21 +184,21 @@ export const NavigationData: any = [
 				name: 'Chernobyl',
 				link: '/photography/chernobyl',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/1267.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/1267.jpg',
 				active: true
 			},
 			{
 				name: 'Frutas',
 				link: '/photography/frutas',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/tomato1.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/tomato1.jpg',
 				active: true
 			},
 			{
 				name: 'Malta',
 				link: '/photography/malta',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/IMG_1325.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/IMG_1325.jpg',
 				active: true
 			},
 			{
@@ -210,21 +210,21 @@ export const NavigationData: any = [
 				name: 'Korsou',
 				link: '/photography/korsou',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/curacao_3.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_3.jpg',
 				active: true
 			},
 			{
 				name: 'Winter',
 				link: '/photography/winter',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/winter02.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter02.jpg',
 				active: true
 			},
 			{
 				name: 'Prisoned Zoo',
 				link: '/photography/prison-zoo',
 				image:
-					'https://api.silvandiepen.nl/wp-content/uploads/2019/09/hawk.jpg',
+					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/hawk.jpg',
 				active: true
 			}
 		]

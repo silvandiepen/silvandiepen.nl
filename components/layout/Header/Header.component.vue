@@ -16,7 +16,6 @@
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api';
-// import Logo from '../../Logo';
 export default defineComponent({
 	setup() {
 		const firstName = 'Sil';

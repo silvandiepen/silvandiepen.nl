@@ -7,10 +7,14 @@
 				class="article-list__item"
 			>
 				<span class="article-list__date">
-					<span class="article-list__date-day">{{ article.date.day }}</span>
-					<span class="article-list__date-month">{{ article.date.month }}</span>
+					<span class="article-list__date-day">{{
+						article.convertedDate.day
+					}}</span>
+					<span class="article-list__date-month">{{
+						article.convertedDate.month
+					}}</span>
 					<span class="article-list__date-year">{{
-						article.date.year
+						article.convertedDate.year
 					}}</span></span
 				>
 				<NuxtLink :to="`/blog/${article.uri}`" class="article-list__link">
@@ -40,32 +44,27 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { format } from 'date-fns';
+import { articleType } from '@/types';
 import { Content } from '@/components';
 export default Vue.extend({
 	name: 'BlogList',
 	components: {
 		Content
 	},
+
+	async asyncData({ store }) {
+		await store.dispatch('articles/loadArticles');
+	},
 	computed: {
-		articleList() {
-			return this.$store.getters['articles/getArticles'].map((article) => {
-				return {
-					...article,
-					date: {
-						day: format(article.date, 'DD'),
-						month: format(article.date, 'MM'),
-						year: format(article.date, 'YY')
-					}
-				};
-			});
+		articleList(): articleType[] {
+			return this.$store.getters['articles/getArticles'];
 		}
 	},
 	created() {
 		this.$store.dispatch('articles/loadArticles');
 	},
 	methods: {
-		addZeros(number, length = 2) {
+		addZeros(number: number, length: number = 2): string {
 			let str = '' + number;
 			while (str.length < length) {
 				str = '0' + str;

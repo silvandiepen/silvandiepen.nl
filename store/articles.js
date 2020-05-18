@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 import { orderBy } from 'lodash';
+import { format } from 'date-fns';
 import articles from '../graphql/query/articles.gql';
-
 const insert = (str, atIndex, value) => {
 	if (typeof atIndex === 'object') {
 		let newStr = str;
@@ -30,13 +30,19 @@ const stripTitle = (str) => {
 export const mutations = {
 	SET_ARTICLES(state, articles) {
 		state.articles = articles.map((article) => {
+			const date = makeDate(article.name.substring(0, 8));
 			return {
 				name: article.name,
 				uri: makeUri(article.name),
 				title: article.object.text.split('\n')[0].replace('# ', ''),
 				data: article.object.text,
 				content: stripTitle(article.object.text),
-				date: makeDate(article.name.substring(0, 8))
+				date,
+				convertedDate: {
+					year: format(date, 'YY'),
+					month: format(date, 'MM'),
+					day: format(date, 'DD')
+				}
 			};
 		});
 		state.loaded = true;

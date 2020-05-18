@@ -16,9 +16,6 @@ export default {
 		MainHeader: Header,
 		MainFooter: Footer
 	},
-	async asyncData({ store }) {
-		await store.dispatch('articles/loadArticles');
-	},
 	data: () => ({
 		scroll: {
 			position: 0,
