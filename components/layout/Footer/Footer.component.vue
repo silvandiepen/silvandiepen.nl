@@ -1,5 +1,22 @@
 <template>
 	<footer id="footer" class="footer">
+		<div class="footer__fastnav row center small-full xlarge-three-quarter">
+			<div class="column">
+				<nav class="fastnav">
+					<ul class="fastnav__list">
+						<li
+							v-for="(item, idx) in FastNavigationData"
+							:key="idx"
+							class="fastnav__item"
+						>
+							<NuxtLink class="fastnav__link" :to="item.link">
+								<span class="fastnav__text">{{ item.title }}</span>
+							</NuxtLink>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 		<div class="footer__backgrounds">
 			<img
 				v-for="(image, idx) in backgroundImage"
@@ -9,19 +26,15 @@
 			/>
 			<div class="footer__background"></div>
 		</div>
-		<div class="row center small-full xlarge-three-quarter">
+		<div class="footer__nav row center small-full xlarge-three-quarter">
 			<div class="column">
-				<nav class="nav">
-					<div class="row small-half medium-fifth">
-						<div
-							v-for="(group, idg) in NavigationData"
-							:key="idg"
-							class="column"
-						>
-							<h6 v-if="group.link">
-								<NuxtLink :to="group.link">{{ group.title }}</NuxtLink>
-							</h6>
-							<h6 v-else>{{ group.title }}</h6>
+				<div class="row small-half medium-fifth">
+					<div v-for="(group, idg) in NavigationData" :key="idg" class="column">
+						<h6 v-if="group.link">
+							<NuxtLink :to="group.link">{{ group.title }}</NuxtLink>
+						</h6>
+						<h6 v-else>{{ group.title }}</h6>
+						<nav class="nav">
 							<ul class="nav__list">
 								<li
 									v-for="(item, idi) in group.children"
@@ -50,9 +63,9 @@
 									</span>
 								</li>
 							</ul>
-						</div>
+						</nav>
 					</div>
-				</nav>
+				</div>
 			</div>
 		</div>
 	</footer>

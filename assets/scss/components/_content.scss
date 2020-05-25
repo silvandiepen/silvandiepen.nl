@@ -3,7 +3,12 @@
 	@include min-(padding, 1, $mobile-padding);
 }
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-
+.content {
+	ul,
+	ol {
+		list-style-type: none;
+	}
+}
 .content code {
 	background-color: color(_White);
 	color: color(_Black);
@@ -50,6 +55,8 @@
 }
 
 ol:not([class]) {
+	display: flex;
+	flex-direction: column;
 	counter-reset: list;
 	li {
 		position: relative;
@@ -64,6 +71,33 @@ ol:not([class]) {
 		}
 	}
 }
+ul:not([class]) {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	li {
+		padding-left: 2em;
+		position: relative;
+		&::before {
+			content: '\2014';
+			position: absolute;
+			left: 0;
+			display: inline-block;
+			min-width: 1em;
+		}
+	}
+}
+.content {
+	ul,
+	ol {
+		&:not([class]) {
+			padding: 0;
+		}
+		li:not([class]) + li:not([class]) {
+			margin-top: 1em;
+		}
+	}
+}
 .large-link {
 	display: block;
 	width: 100%;
@@ -71,17 +105,5 @@ ol:not([class]) {
 	text-align: center;
 	@media #{$small-only} {
 		font-size: 1.5em;
-	}
-}
-ul:not([class]) {
-	display: flex;
-	flex-direction: column;
-	// border: 1px solid red;
-	li {
-		padding-left: 2em;
-		&::before {
-			content: '\2014';
-			margin-right: 0.5em;
-		}
 	}
 }

@@ -28,6 +28,7 @@ export default () => {
 
 	return {
 		link: ApolloLink.from([...loggerLink, authLink, httpLink]),
-		cache: new InMemoryCache()
+		cache: new InMemoryCache(),
+		defaultHttpLink: false
 	};
 };

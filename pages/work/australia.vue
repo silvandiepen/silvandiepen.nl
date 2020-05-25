@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--guyn">
-		<Heading class="background--browndark" title="Australia">
+		<Heading background="browndark" title="Australia">
 			<h2>
 				Creating an experience
 			</h2>
@@ -18,7 +18,7 @@
 				illustrations which were used in the websites and apps.
 			</p>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>A few of the icons</h3>
 			<div class="icon-list">
 				<img
@@ -32,7 +32,7 @@
 				/>
 			</div>
 		</Content>
-		<Content class="background--white">
+		<Content background="white">
 			<img class="full-width" src="/svg/australia/footer_landscape.svg" />
 		</Content>
 	</main>

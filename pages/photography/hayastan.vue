@@ -1,30 +1,30 @@
 <template>
 	<main class="page page--winter">
 		<Heading title="Winter"> </Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter08.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter08.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter07.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter07.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter06.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter06.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter05.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter05.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter04.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter04.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter03.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter03.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter02.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter02.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter01.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter01.jpg"
 			/>
 		</Content>
 	</main>

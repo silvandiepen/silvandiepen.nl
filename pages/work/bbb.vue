@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--guyn">
-		<Heading title="BBB" class="background--nightbluelight">
+		<Heading title="BBB" background="nightbluelight">
 			<h2>
 				A Bike Accessory brand where I did quite a lot for.
 			</h2>
@@ -14,7 +14,7 @@
 				which could be used on the website and on their packaging.
 			</h4>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>A few of the icons</h3>
 			<div class="icon-list">
 				<img

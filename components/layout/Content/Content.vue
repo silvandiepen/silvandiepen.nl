@@ -1,19 +1,30 @@
 <template>
-	<Container class="page-content">
-		<div class="row center">
-			<div class="column small-full medium-two-third">
-				<div class="content">
-					<slot></slot>
+	<div class="content-container">
+		<Container
+			class="page-content"
+			:class="background ? `background--${background}` : null"
+		>
+			<div class="row center">
+				<div class="column small-full medium-two-third xlarge-half">
+					<div class="content">
+						<slot></slot>
+					</div>
 				</div>
 			</div>
-		</div>
-	</Container>
+		</Container>
+	</div>
 </template>
 
 <script>
 import { Container } from '../Container';
 export default {
-	components: { Container }
+	components: { Container },
+	props: {
+		background: {
+			type: String,
+			default: null
+		}
+	}
 };
 </script>
 <style lang="scss" src="./Content.style.scss" />

@@ -1,7 +1,7 @@
 <template>
 	<main class="page page--logos">
 		<Heading title="Logo's" />
-		<Content class="background--black">
+		<Content background="black">
 			<p>
 				Writing, designing and making brands. I love creating logo’s. The
 				simpler it seems, the harder it is to make. Over the years I’ve made
@@ -11,29 +11,29 @@
 		<section class="blocks blocks--height-half">
 			<Block size="medium">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_black.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/parque-chame_black.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--black">
+			<Block size="small" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_white.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/parque-chame_white.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--orange" />
-			<Block size="xsmall" class="background--dark" />
-			<Block size="xsmall" class="background--yellow" />
-			<Block size="xsmall" class="background--orange" />
+			<Block size="small" background="orange" />
+			<Block size="xsmall" background="dark" />
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="orange" />
 
-			<Block size="small" class="background--dark">
+			<Block size="small" background="dark">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/parque-chame_lines.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/parque-chame_lines.svg"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--white" />
-			<Block size="xsmall" class="background--yellow" />
-			<Block size="xsmall" class="background--orange" />
-			<Block size="xsmall" class="background--dark" />
-			<Block size="xsmall" class="background--yellow" />
+			<Block size="xsmall" background="white" />
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="orange" />
+			<Block size="xsmall" background="dark" />
+			<Block size="xsmall" background="yellow" />
 		</section>
 		<Content>
 			<h4>Parque Chame</h4>
@@ -44,33 +44,33 @@
 		</Content>
 
 		<section class="blocks blocks--height-half">
-			<Block size="small" class="background--white">
+			<Block size="small" background="white">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo.png"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/houseinspace-logo.png"
 				/>
 			</Block>
-			<Block size="small" class="background--skyblue" />
-			<Block size="xsmall" class="background--black">
+			<Block size="small" background="skyblue" />
+			<Block size="xsmall" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-icon.png"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/houseinspace-icon.png"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--skybluelight" />
-			<Block size="xsmall" class="background--skyblue" />
+			<Block size="xsmall" background="skybluelight" />
+			<Block size="xsmall" background="skyblue" />
 
-			<Block size="medium" class="background--black">
+			<Block size="medium" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo-white.png"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/houseinspace-logo-white.png"
 			/></Block>
-			<Block size="xsmall" class="background--white" />
-			<Block size="small" class="background--red">
+			<Block size="xsmall" background="white" />
+			<Block size="small" background="red">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/houseinspace-logo-lines.png"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/houseinspace-logo-lines.png"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--blue" />
-			<Block size="xsmall" class="background--dark" />
-			<Block size="xsmall" class="background--yellow" />
+			<Block size="xsmall" background="blue" />
+			<Block size="xsmall" background="dark" />
+			<Block size="xsmall" background="yellow" />
 		</section>
 
 		<Content>
@@ -85,68 +85,68 @@
 		<section class="blocks blocks--height-half">
 			<Block size="medium">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_normal.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/resail_normal.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--black">
+			<Block size="small" background="black">
 				<img
-					src=" https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_white.svg"
+					src=" https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/resail_white.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--skyblue" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--skybluelight" />
-			<Block size="xsmall" class="background--white" />
+			<Block size="small" background="skyblue" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="skybluelight" />
+			<Block size="xsmall" background="white" />
 
-			<Block size="small" class="background--skyblue">
+			<Block size="small" background="skyblue">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/resail_oncolor.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/resail_oncolor.svg"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--white" />
-			<Block size="xsmall" class="background--skybluelight" />
-			<Block size="xsmall" class="background--skybluedark" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--blue" />
+			<Block size="xsmall" background="white" />
+			<Block size="xsmall" background="skybluelight" />
+			<Block size="xsmall" background="skybluedark" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="blue" />
 		</section>
 
 		<Content>
 			<h4>ReSail</h4>
 			<p>
-				Selling second hand luxury boats
+				Selling second hand luxury yachts
 			</p>
 		</Content>
 
 		<section class="blocks blocks--height-half">
 			<Block size="small">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_icon.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/kraber_icon.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--black">
+			<Block size="small" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_icon-white.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/kraber_icon-white.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--red" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--red" />
-			<Block size="xsmall" class="background--white" />
+			<Block size="small" background="red" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="red" />
+			<Block size="xsmall" background="white" />
 
-			<Block size="small" class="background--white">
+			<Block size="small" background="white">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_text.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/kraber_text.svg"
 				/>
 			</Block>
-			<Block size="medium" class="background--white">
+			<Block size="medium" background="white">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/kraber_logo.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/kraber_logo.svg"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--red" />
-			<Block size="xsmall" class="background--reddark" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--red" />
+			<Block size="xsmall" background="red" />
+			<Block size="xsmall" background="reddark" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="red" />
 		</section>
 
 		<Content>
@@ -158,39 +158,77 @@
 		<section class="blocks blocks--height-half">
 			<Block size="small">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/04/21124712/rm-black-row.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-black-row.svg"
 				/>
 			</Block>
-			<Block size="medium" class="background--black">
+			<Block size="medium" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/04/21124712/rm-black-row.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-black-row.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--yellow" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--yellow" />
-			<Block size="xsmall" class="background--white" />
+			<Block size="small" background="yellow" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="white" />
 
-			<Block size="small" class="background--black">
+			<Block size="small" background="black">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/04/21124713/rm-icon-white.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-icon-white.svg"
 				/>
 			</Block>
-			<Block size="small" class="background--white">
+			<Block size="small" background="white">
 				<img
-					src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/04/21124714/rm-icon-yellow.svg"
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-icon-yellow.svg"
 				/>
 			</Block>
-			<Block size="xsmall" class="background--yellow" />
-			<Block size="xsmall" class="background--yellowdark" />
-			<Block size="xsmall" class="background--black" />
-			<Block size="xsmall" class="background--yellowlight" />
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="yellowdark" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="yellowlight" />
 		</section>
 
 		<Content>
 			<h4>RM</h4>
 			<p>
 				Zinc Plating in Nhiznhny Novgorod
+			</p>
+		</Content>
+		<section class="blocks blocks--height-half">
+			<Block size="small">
+				<img
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-black-row.svg"
+				/>
+			</Block>
+			<Block size="medium" background="black">
+				<img
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-black-row.svg"
+				/>
+			</Block>
+			<Block size="small" background="yellow" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="white" />
+
+			<Block size="small" background="black">
+				<img
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-icon-white.svg"
+				/>
+			</Block>
+			<Block size="small" background="white">
+				<img
+					src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/rm-icon-yellow.svg"
+				/>
+			</Block>
+			<Block size="xsmall" background="yellow" />
+			<Block size="xsmall" background="yellowdark" />
+			<Block size="xsmall" background="black" />
+			<Block size="xsmall" background="yellowlight" />
+		</section>
+
+		<Content>
+			<h4>Partine</h4>
+			<p>
+				Durable Garden Furniture
 			</p>
 		</Content>
 	</main>

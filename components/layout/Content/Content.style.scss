@@ -16,4 +16,18 @@
 			transform: translateX(-50%);
 		}
 	}
+	p,
+	h3,
+	h4,
+	h5 {
+		max-width: 75ch;
+	}
+}
+.content-container {
+	padding: 0;
+	clip-path: inset(0 grid(1) 0 grid(1));
+	transition: clip-path $base-transition ease-in-out;
+	&:hover {
+		clip-path: inset(0 0 0 0);
+	}
 }

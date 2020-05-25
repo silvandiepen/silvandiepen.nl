@@ -1,10 +1,10 @@
 <template>
 	<main class="page page--me">
-		<Heading class="background--orange" title="Open Source">
+		<Heading background="orange" title="Open Source">
 			<h2>SO</h2>
 			<h4>YEAHH</h4>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>More about me…</h3>
 			<p>
 				I was born in a small village called Limmen the Netherlands, but grew up

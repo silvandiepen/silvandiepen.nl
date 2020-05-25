@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Aybu</h1>
 		</Heading>
-		<Content class="background--army">
+		<Content background="army">
 			<h2>
 				A little website, doing things with special characters.
 			</h2>

@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--me">
-		<Heading class="background--orange" title="My name is Sil van Diepen">
+		<Heading background="orange" title="My name is Sil van Diepen">
 			<h2>
 				I create visual things using code and illustrations.
 			</h2>
@@ -8,11 +8,15 @@
 				I love creating visual styles using code, illustrations or any way which
 				fits. I can help you with logo, identities, digital design,
 				illustrations and code. I sometimes post my stuff on platforms like
-				GitHub, Codepen, Dribbble and Behance. Are you interested? Just contact
-				me 🙂
+				<a href="https://www.github.com/silvandiepen">GitHub</a>,
+				<a href="https://www.codepen.io/silvandiepen">Codepen</a>,
+				<a href="https://www.dribbble.com/silvandiepen">Dribbble</a>,
+				<a href="https://www.dribbble.com/silvandiepen">Behance</a> and
+				<a href="https://www.instagram.com/silvandiepen">Instagram</a>. Are you
+				interested? Just <NuxtLink to="/contact">contact</NuxtLink> me 🙂
 			</h4>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>More about me…</h3>
 			<p>
 				I was born in a small village called Limmen the Netherlands, but grew up
@@ -30,7 +34,7 @@
 		<Content class="content-with-photo">
 			<h3>And this is me…</h3>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/03/20105423/me.png"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/me.png"
 			/>
 		</Content>
 	</main>

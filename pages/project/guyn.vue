@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Guyn</h1>
 		</Heading>
-		<Content class="background--plum">
+		<Content background="plum">
 			<h2>
 				From a colorset, to a full set of developer tools
 			</h2>
@@ -15,8 +15,14 @@
 			</h4>
 			<p></p>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<Row>
+				<Item title="Style" link="https://style.guyn.nl">
+					Sass toolset to help you style. Guyn Style is a full blown library of
+					functions, mixins and other styling help to easily create your style.
+					Where other Sass frameworks give you styling, Guyn Style gives you the
+					tools to build the styling.
+				</Item>
 				<Item title="Colors">
 					A full colorset of all basic colors. In different formats, from json,
 					to scss and css custom properties. In that way easy implementable in
@@ -31,11 +37,11 @@
 					Converting colors and icons to components. Guyn also includes those
 					little tools.
 				</Item>
-				<Item title="Icons">
+				<!-- <Item title="Icons">
 					A full set of icons in any kind of format. Original SVG files, a font
 					and ofcourse components in Vue, React and Web Components which can
 					directly be used.
-				</Item>
+				</Item> -->
 			</Row>
 		</Content>
 		<Content>

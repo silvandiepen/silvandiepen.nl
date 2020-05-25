@@ -1,5 +1,5 @@
 <template>
-	<Content class="background--black article-list">
+	<Content background="black" class="article-list">
 		<ul v-if="articleList" class="article-list__list">
 			<li
 				v-for="(article, idx) in articleList"
@@ -22,30 +22,13 @@
 				</NuxtLink>
 			</li>
 		</ul>
-		<!-- <ul v-if="articleList" class="article-list__list">
-			<li
-				v-for="(article, idx) in articleList"
-				:key="idx"
-				class="article-list__item"
-			>
-				{{ article }}
-				<span v-if="article.date_obj" class="article-list__date">
-					{{ article.date_obj.y }}.{{ addZeros(article.date_obj.m) }}.{{
-						addZeros(article.date_obj.d)
-					}}
-				</span>
-				<NuxtLink :to="`/blog/${article.uri}`" class="article-list__link">
-					<span class="article-list__text">{{ article.title }}</span>
-				</NuxtLink>
-			</li>
-		</ul> -->
 	</Content>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { articleType } from '@/types';
-import { Content } from '@/components';
+import { Content } from '@/components/Layout';
 export default Vue.extend({
 	name: 'BlogList',
 	components: {

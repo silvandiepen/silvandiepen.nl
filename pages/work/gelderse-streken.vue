@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--guyn">
-		<Heading class="background--armylight" title="Gelderse Streken">
+		<Heading background="armylight" title="Gelderse Streken">
 			<h2>
 				At Matise we once made a campaign voor "Gelderse Streken".
 			</h2>
@@ -9,7 +9,7 @@
 				anymore. But I made a little iconset for the thing we made :)
 			</h4>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>A few of the icons</h3>
 			<div class="icon-list">
 				<img

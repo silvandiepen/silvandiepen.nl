@@ -1,5 +1,8 @@
 <template>
-	<div class="block" :class="sizeClasses">
+	<div
+		class="block"
+		:class="[sizeClasses, background ? `background--${background}` : null]"
+	>
 		<div class="content">
 			<slot></slot>
 		</div>
@@ -14,6 +17,10 @@ export default {
 		size: {
 			type: String,
 			default: 'default'
+		},
+		background: {
+			type: String,
+			default: null
 		}
 	},
 	data: () => ({

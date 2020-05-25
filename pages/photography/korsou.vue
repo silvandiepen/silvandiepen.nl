@@ -8,28 +8,28 @@
 		</Heading>
 		<Content>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_8.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_8.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_7.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_7.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_6.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_6.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_5.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_5.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_4.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_4.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_3.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_3.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_2.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_2.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_1.jpg"
 			/>
 		</Content>
 	</main>

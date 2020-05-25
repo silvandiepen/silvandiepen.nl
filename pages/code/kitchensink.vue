@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>This is just the kitchensink for this website...</h1>
 		</Heading>
-		<Content class="background--red">
+		<Content background="red">
 			<h3>
 				Showing off all the components and style is my thing.. that's why it's
 				just public. It helps me to keep track of everything and see if I didn't
@@ -48,7 +48,7 @@
 				</tbody>
 			</table>
 		</Content>
-		<Content class="background--beige">
+		<Content background="beige">
 			<h2>Forms</h2>
 			<h4>Text Inputs</h4>
 			<table>

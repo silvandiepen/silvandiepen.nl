@@ -1,7 +1,7 @@
 <template>
 	<main class="page page--code">
 		<Heading title="Writing code, for different purposes.." />
-		<Content class="background--brownlight">
+		<Content background="brownlight">
 			<h2>Open Source</h2>
 			<h4>
 				A very important thing in the life of any frontend developer must be
@@ -14,7 +14,7 @@
 				yourself, but I'm doing my best to do so.
 			</p>
 		</Content>
-		<Content class="background--beigedark">
+		<Content background="beigedark">
 			<h2>Design Systems</h2>
 			<h4>
 				Might be a bit opinionated, but I put Design systems under code. Because
@@ -36,7 +36,7 @@
 			</p>
 		</Content>
 
-		<Content class="background--beige">
+		<Content background="beige">
 			<h2>Generators</h2>
 			<h4>
 				As as truely lazy developers, you try to make things easier and easier.

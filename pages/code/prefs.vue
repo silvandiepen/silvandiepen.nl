@@ -1,7 +1,7 @@
 <template>
 	<main class="page page--code">
 		<Heading title="Preferences" />
-		<Content class="background--red">
+		<Content background="red">
 			<h2>
 				Every developer has its preferences, nothing is either good or bad. But
 				I think it does say something about somebody. These are some of my
@@ -75,7 +75,7 @@
 				CSS-in-JS method prevents easy use in different stack projects.
 			</p>
 		</Content>
-		<Content class="background--beigelight">
+		<Content background="beigelight">
 			<h2>JavaScript</h2>
 			<p>
 				After years and years creating websites using just HTML, CSS and PHP. I

@@ -1,13 +1,15 @@
-export interface dateObjectType {
-	year: number;
-	month: number;
-	day: number;
+interface ArticleDate {
+	year: string;
+	month: string;
+	day: string;
 }
-export interface articleType {
-	title: String;
-	data: String;
-	content: String;
-	name: String;
-	convertedData: dateObjectType;
+
+export interface Article {
+	name: string;
+	uri: string;
+	title: string;
+	meta: unknown;
+	content: string;
 	date: Date;
+	convertedDate: ArticleDate;
 }

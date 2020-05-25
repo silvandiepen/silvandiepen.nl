@@ -4,20 +4,32 @@
 			{{ title }}
 		</h3>
 		<p><slot></slot></p>
+		<Button v-if="link" :link="link">{{
+			linkTitle ? linkTitle : title
+		}}</Button>
 	</div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api';
-
-export default defineComponent({
-	props: {
-		title: String
+import Vue from 'vue';
+import { Button } from '@/components';
+export default Vue.extend({
+	components: {
+		Button
 	},
-	setup(props) {
-		return {
-			props
-		};
+	props: {
+		title: {
+			type: String,
+			default: null
+		},
+		link: {
+			type: String,
+			default: null
+		},
+		linkTitle: {
+			type: String,
+			default: null
+		}
 	}
 });
 </script>

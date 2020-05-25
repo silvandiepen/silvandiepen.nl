@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--guyn">
-		<Heading class="background--yellow" title="Toun">
+		<Heading background="yellow" title="Toun">
 			<h2>
 				A little real estate website project.
 			</h2>
@@ -9,7 +9,7 @@
 			</h4>
 		</Heading>
 
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>A few of the icons</h3>
 			<div class="icon-list">
 				<img

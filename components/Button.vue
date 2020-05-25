@@ -1,7 +1,17 @@
 <template>
-	<button class="button">
+	<component
+		:is="buttonType"
+		class="button"
+		:class="[color ? `button--${color}` : undefined]"
+		:href="[buttonType == 'a' ? link : undefined]"
+		:to="[buttontype == 'route-link' ? link : undefined]"
+	>
+		<span class="button__background"></span>
 		<span class="button__text"><slot /></span>
-	</button>
+		<span v-if="icon" class="button__icon">
+			<span class="icon" :class="[`icon--${icon}`]"></span>
+		</span>
+	</component>
 </template>
 
 <script>
@@ -23,17 +33,20 @@ export default Vue.extend({
 		}
 	},
 	data: () => ({
-		buttonType: 'button',
 		buttonColor: 'default'
 	}),
+	computed: {
+		buttonType() {
+			const isLink = new RegExp('^(https://|https://|tel:|mailto:)');
+			let buttonType = 'button'; // Determine type of link
+			if (this.$props && this.$props.link && this.$props.link.match(isLink))
+				buttonType = 'a';
+			else if (this.$props && this.$props.link) buttonType = 'router-link';
+			console.log(buttonType);
+			return buttonType;
+		}
+	},
 	beforeCreate() {
-		const isLink = new RegExp('^(https://|https://|tel:|mailto:)');
-		// Determine type of link
-		if (this.$props && this.$props.link && this.$props.link.match(isLink))
-			this.buttonType = 'a';
-		else if (this.$props && this.$props.link) this.buttonType = 'router-link';
-		else this.buttonType = 'button';
-
 		// Set the color
 		if (this.$props && this.$props.color) this.buttonColor = this.$props.color;
 	},
@@ -45,112 +58,6 @@ export default Vue.extend({
 				this.$props.icon ? `button--icon` : null
 			];
 		}
-	},
-
-	render(h) {
-		// If the link is a nuxt link, render will build it up with the NuxtLink component.
-		if (this.buttonType === 'router-link') {
-			return h(
-				Vue.component('RouterLink'),
-				{
-					props: {
-						to: this.$props.link
-					},
-					class: this.buttonClasses()
-				},
-				[
-					h('span', { class: ['button__text'] }, this.$slots.default),
-					this.$props.icon
-						? h('span', {
-								class: ['button__icon', `icon--${this.$props.icon}`]
-						  })
-						: null
-				]
-			);
-		} else {
-			// Otherwise it will be an 'a' or a button. these can just be passed regularly to the render.
-			return h(
-				this.buttonType,
-				{
-					attrs: {
-						href: this.buttonType === 'a' ? this.$props.link : null
-					},
-					class: this.buttonClasses()
-				},
-				[
-					h('span', { class: ['button__text'] }, this.$slots.default),
-					this.$props.icon
-						? h('span', { class: ['button__icon'] }, [
-								h('span', { class: [`silicon-${this.$props.icon}`] })
-						  ])
-						: null
-				]
-			);
-		}
 	}
 });
 </script>
-
-<style lang="scss">
-@import '~tools';
-// .button {
-// 	position: relative;
-// 	z-index: 1;
-// 	display: inline-block;
-// 	border: none;
-// 	border-radius: 1.5em;
-// 	color: var(--bg);
-// 	font-weight: 600;
-// 	font-size: 1rem;
-// 	line-height: 1em;
-// 	text-decoration: none;
-// 	transition: $base-transition ease-in-out;
-// 	padding: 1em 1.25em;
-// 	&:focus,
-// 	&:hover {
-// 		transform: translateX(-0.75em);
-// 		&:after {
-// 			transform: translateX(2.5em);
-// 		}
-// 		.button__text:after {
-// 			transform: scale(1) translateX(0em);
-// 		}
-// 	}
-// 	&:before {
-// 		content: '';
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		z-index: -1;
-// 		width: 100%;
-// 		height: 100%;
-// 		border-radius: inherit;
-// 		background-color: var(--text);
-// 		transition: 0.3s;
-// 	}
-// 	&:after {
-// 		content: '';
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		z-index: -2;
-// 		width: 100%;
-// 		height: 100%;
-
-// 		border-radius: inherit;
-// 		background-color: var(--text);
-// 		opacity: 0.5;
-// 		transition: $base-transition ease-in-out;
-// 	}
-// 	&__text {
-// 		&:after {
-// 			content: '→';
-// 			position: absolute;
-// 			left: 100%;
-// 			transform: scale(0) translateX(-3em);
-// 			transition: $base-transition ease-in-out;
-// 			padding: 0 0.5em;
-// 		}
-// 	}
-// }
-</style>

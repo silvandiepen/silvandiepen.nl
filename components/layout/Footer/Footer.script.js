@@ -1,5 +1,5 @@
 import { defineComponent, ref } from '@vue/composition-api';
-import { NavigationData } from './Footer.data';
+import { NavigationData, FastNavigationData } from './Footer.data';
 export default defineComponent({
 	setup() {
 		const backgroundImage = ref([]);
@@ -15,6 +15,7 @@ export default defineComponent({
 		return {
 			backgroundImage,
 			NavigationData,
+			FastNavigationData,
 			addImage
 		};
 	}

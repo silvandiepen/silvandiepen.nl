@@ -3,10 +3,10 @@
 		<Heading
 			title="Tiggy & Fred"
 			class="tiggy-fred-heading background--nightblue"
-			style="background-image:url(https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl/wp-content/uploads/2020/03/23164211/tiggy-fred.png)"
+			style="background-image:url(https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/23164211/tiggy-fred.png)"
 		>
 		</Heading>
-		<Content class="background--armylight">
+		<Content background="armylight">
 			<h2>Tiggy &amp; Fred are two little friends</h2>
 			<h4>
 				They have the smallest adventures and can be happy with little things.

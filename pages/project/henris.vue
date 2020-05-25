@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Henri's</h1>
 		</Heading>
-		<Content class="background--nightblue">
+		<Content background="nightblue">
 			<h2>
 				The Sass toolbelt
 			</h2>
@@ -13,7 +13,7 @@
 			</h4>
 			<p></p>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<Row>
 				<Item title="Colors">
 					A full colorset of all basic colors. In different formats, from json,

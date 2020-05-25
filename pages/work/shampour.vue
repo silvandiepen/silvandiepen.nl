@@ -1,6 +1,6 @@
 <template>
 	<main class="page page--brown">
-		<Heading title="Shampour" class="background--brown">
+		<Heading title="Shampour" background="brown">
 			<h2>
 				The shampour, is a stable in the Armenian kitchen.
 			</h2>
@@ -9,7 +9,7 @@
 				meat on for the barbeque.
 			</h4>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>A few of the icons</h3>
 			<div class="icon-list">
 				<div v-for="(icon, idx) in icons" :key="idx" class="icon-list__item">

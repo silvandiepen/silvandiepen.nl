@@ -1,10 +1,7 @@
 <template>
 	<main class="page page--about">
-		<Heading
-			class="background--skyblue"
-			title="What I use, at work and at home."
-		/>
-		<Content class="background--icelight">
+		<Heading background="skyblue" title="What I use, at work and at home." />
+		<Content background="icelight">
 			<h3>
 				So, I find it really interesting to see what other people use, and why
 				they use it. Sometimes it’s interesting, sometimes it just gives a
@@ -77,7 +74,7 @@
 			</Row>
 		</Content>
 
-		<Content class="background--black">
+		<Content background="black">
 			<h2>Editor & Terminal</h2>
 			<h4>
 				Editors and terminals are changing a lot, at the moment I’m using VSCode
@@ -105,7 +102,7 @@
 				</Item>
 			</Row>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h2>
 				Frameworks &amp; Libraries
 			</h2>
@@ -122,14 +119,13 @@
 						Sass is giving me that. CSS-in-JS is nice and all, but no… Just give
 						me Sass.
 					</p>
-					<a
-						href="https://sass-lang.com/"
+					<Button
+						color="white"
+						to="https://sass-lang.com/"
 						aria-label="Read more about Sass"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Sass
-						</span>
-					</a>
+					>
+						Sass
+					</Button>
 				</Item>
 
 				<Item title="Vue">
@@ -138,14 +134,13 @@
 						Angular… Vue is just, relieve! I love Vue and what it stands for,
 						the way it works and intuitivety.
 					</p>
-					<a
-						href="https://vuejs.org/"
+					<Button
+						color="white"
+						to="https://vuejs.org/"
 						aria-label="Read more about Vue"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							VueJS
-						</span>
-					</a>
+					>
+						VueJS
+					</Button>
 				</Item>
 				<Item title="NuxtJS"
 					><p>
@@ -154,54 +149,34 @@
 						everything included in a fast and easy way.
 					</p>
 					<p>
-						We have actually created our own
-						<code>npx create-henris-project</code> setup projects even easier in
-						combination with Henri’s and some extra settings
+						I have created my own starter <code>npx create-guyn-app</code> setup
+						projects even easier in combination with Guyn and some extra
+						settings
 					</p>
-					<a
-						href="https://nuxtjs.org/"
+					<Button
+						color="white"
+						to="https://nuxtjs.org/"
 						aria-label="Read more about NuxtJS"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							NuxtJS
-						</span>
-					</a>
-				</Item>
-				<Item title="Henri’s">
-					<p>
-						A Sass Toolset, the Sass framework which doesn’t give styling but
-						just a very good set of different functions and mixins to actually
-						build things yourself without having to override given styling.
-					</p>
-					<a
-						href="https://henris.style"
-						aria-label="Read more about Henri's"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Henri's
-						</span>
-					</a>
+					>
+						NuxtJS
+					</Button>
 				</Item>
 				<Item title="Guyn">
 					<p>
-						My own color library, as simple implementable library which give me
-						all the colors you see here. I got annoyed of having to pick colors
-						every time for all projects, also to keep all my projects a little
-						bit insync and have them the same colorways made it better. Thats
-						why I created this libary.
+						My own Developer Toolset, a set which consists of icons, a design
+						system, sass framework and is growing every day :)
 					</p>
-					<a
-						href="https://www.guyn.nl"
+					<Button
+						color="white"
+						to="https://www.guyn.nl"
 						aria-label="Read more about Guyn"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Guyn
-						</span>
-					</a>
+					>
+						Guyn
+					</Button>
 				</Item>
 			</Row>
 		</Content>
-		<Content class="background--blue">
+		<Content background="blue">
 			<h2>Tools &amp; Plugins</h2>
 			<h4>
 				A wide variation of tools, for designing purposes and development. I use
@@ -215,15 +190,13 @@
 						My main messaging app, where I communicate with my coworkers and
 						more and more people actually…
 					</p>
-					<a
-						href="https://www.slack.com/"
+					<Button
+						color="white"
+						to="https://www.slack.com/"
 						aria-label="Read more about Slack"
-						class="button button--magentalight button--default"
 					>
-						<span class="button__text">
-							Slack
-						</span>
-					</a>
+						Slack
+					</Button>
 				</Item>
 
 				<Item title="Sketch"
@@ -232,14 +205,13 @@
 						completely understand certain choices they made. It’s a cool app and
 						lightweight.
 					</p>
-					<a
-						href="https://www.sketch.com/"
+					<Button
+						color="white"
+						to="https://www.sketch.com/"
 						aria-label="Read more about Sketch"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Sketch App
-						</span>
-					</a>
+					>
+						Sketch App
+					</Button>
 				</Item>
 				<Item title="Zeplin">
 					<p>
@@ -247,14 +219,13 @@
 						things to measure and extract certain assets without having to open
 						all sketch files and find you way through designers messes 😃
 					</p>
-					<a
-						href="https://www.zeplin.io/"
+					<Button
+						color="white"
+						to="https://www.zeplin.io/"
 						aria-label="Read more about Zeplin"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Zeplin
-						</span>
-					</a>
+					>
+						Zeplin
+					</Button>
 				</Item>
 				<Item title="Adobe Illustrator"
 					><p>
@@ -262,14 +233,13 @@
 						tool. I love Illustrator, even though Adobe is making it less and
 						less workable.
 					</p>
-					<a
-						href="https://www.adobe.com/illustrator"
+					<Button
+						color="white"
+						to="https://www.adobe.com/illustrator"
 						aria-label="Read more about Adobe Illustrator"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Illustrator
-						</span>
-					</a>
+					>
+						Illustrator
+					</Button>
 				</Item>
 				<Item title="Adobe Photoshop"
 					><p>
@@ -278,28 +248,26 @@
 						getting faster, but yeah… Thats Adobe, I don’t think they actually
 						care.
 					</p>
-					<a
-						href="https://www.adobe.com/photoshop"
+					<Button
+						color="white"
+						to="https://www.adobe.com/photoshop"
 						aria-label="Read more about Adobe Photoshop"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Photoshop
-						</span>
-					</a>
+					>
+						Photoshop
+					</Button>
 				</Item>
 				<Item title="Sequel Pro"
 					><p>
 						Mysql databases made easy. Before I was digging around in Phpmyadmin
 						but ever since Sequel Pro, I really can’t anymore.
 					</p>
-					<a
-						href="https://www.sequelpro.com/"
+					<Button
+						color="white"
+						to="https://www.sequelpro.com/"
 						aria-label="Read more about Sequel Pro"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Sequel Pro
-						</span>
-					</a>
+					>
+						Sequel Pro
+					</Button>
 				</Item>
 				<Item title="Tower"
 					><p>
@@ -307,40 +275,37 @@
 						making it easier to see what’s actually happening and make sure I
 						didn’t forget to&nbsp;<code>git add</code>.
 					</p>
-					<a
-						href="https://www.git-tower.com/"
+					<Button
+						color="white"
+						to="https://www.git-tower.com/"
 						aria-label="Read more about Tower"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Tower
-						</span>
-					</a>
+					>
+						Tower
+					</Button>
 				</Item>
 				<Item title="Postman"
 					><p>
 						Checking all your api requests made visual. It just makes it easy.
 					</p>
-					<a
-						href="https://www.getpostman.com/"
+					<Button
+						color="white"
+						to="https://www.getpostman.com/"
 						aria-label="Read more about Postman"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Postman
-						</span>
-					</a>
+					>
+						Postman
+					</Button>
 				</Item>
 				<Item title="Vue Devtools"
 					><p>
 						I don’t think I can ever develop Vue anymore without it. Love it!
 					</p>
-					<a
-						href="https://github.com/vuejs/vue-devtools"
+					<Button
+						color="white"
+						to="https://github.com/vuejs/vue-devtools"
 						aria-label="Read more about Vue Devtools"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Vue Devtools on GitHub
-						</span>
-					</a>
+					>
+						Vue Devtools on GitHub
+					</Button>
 				</Item>
 				<Item title="Wordpress"
 					><p>
@@ -350,41 +315,38 @@
 						find something which works better and give me the freedom of hosting
 						it myself.
 					</p>
-					<a
-						href="https://www.wordpress.org/"
+					<Button
+						color="white"
+						to="https://www.wordpress.org/"
 						aria-label="Read more about Wordpress"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Wordpress
-						</span>
-					</a>
+					>
+						Wordpress
+					</Button>
 				</Item>
 				<Item title="Dropbox"
 					><p>
 						I have tried working with Google Drive, but I really can’t. Dropbox
 						just works and easy.
 					</p>
-					<a
-						href="https://www.dropbox.com/"
+					<Button
+						color="white"
+						to="https://www.dropbox.com/"
 						aria-label="Read more about Dropbox"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Dropbox
-						</span>
-					</a>
+					>
+						Dropbox
+					</Button>
 				</Item>
 				<Item title="Stack"
 					><p>
 						They gave me 1tb for free in the beginning. So yes, still using it!
 					</p>
-					<a
-						href="https://www.transip.nl/stack/"
+					<Button
+						color="white"
+						to="https://www.transip.nl/stack/"
 						aria-label="Read more about Stack"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Stack
-						</span>
-					</a>
+					>
+						Stack
+					</Button>
 				</Item>
 				<Item title="Itsycal"
 					><p>
@@ -393,18 +355,17 @@
 						was doing this for a long time in calendar, but this is making it
 						just 10x easier.
 					</p>
-					<a
-						href="https://www.mowglii.com/itsycal/"
+					<Button
+						color="white"
+						to="https://www.mowglii.com/itsycal/"
 						aria-label="Read more about Itsycal"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							ItsyCal
-						</span>
-					</a>
+					>
+						ItsyCal
+					</Button>
 				</Item>
 			</Row>
 		</Content>
-		<Content class="background--red">
+		<Content background="red">
 			<h2>Online &amp; Services</h2>
 			<h4>
 				Like everyone else I make use of a few services to make my life a
@@ -420,14 +381,13 @@
 						price. After experiencing how life was with ads while on vacation
 						where Premium didn’t work… I really enjoy Youtube Premium 😃
 					</p>
-					<a
-						href="https://www.youtube.com/premium"
+					<Button
+						color="white"
+						to="https://www.youtube.com/premium"
 						aria-label="Read more about Youtube Premium"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Youtube Premium
-						</span>
-					</a>
+					>
+						Youtube Premium
+					</Button>
 				</Item>
 				<Item title="Netflix">
 					<p>
@@ -435,14 +395,13 @@
 						helps! Although I am…really curious about what Disney is going to
 						do.
 					</p>
-					<a
-						href="https://www.netflix.com/"
+					<Button
+						color="white"
+						to="https://www.netflix.com/"
 						aria-label="Read more about Netflix"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Netflix
-						</span>
-					</a>
+					>
+						Netflix
+					</Button>
 				</Item>
 				<Item title="Netlify"
 					><p>
@@ -450,14 +409,13 @@
 						truely love Netlify’s experience and want to do more and more with
 						it!
 					</p>
-					<a
-						href="https://www.netlify.com/"
+					<Button
+						color="white"
+						to="https://www.netlify.com/"
 						aria-label="Read more about Netlify"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Netlify
-						</span>
-					</a>
+					>
+						Netlify
+					</Button>
 				</Item>
 				<Item title="Versio">
 					<p>
@@ -466,28 +424,26 @@
 						which I personally make are hosted there. Am I really happy with it?
 						Well… price-wise yes.
 					</p>
-					<a
-						href="https://www.versio.nl"
+					<Button
+						color="white"
+						to="https://www.versio.nl"
 						aria-label="Read more about Versio"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							Versio
-						</span>
-					</a>
+					>
+						Versio
+					</Button>
 				</Item>
 				<Item title="NameCheap">
 					<p>
 						Versio doesn’t do all extensions, for the rest Namecheap is usually
 						my go to.
 					</p>
-					<a
-						href="https://www.namecheap.com"
+					<Button
+						color="white"
+						to="https://www.namecheap.com"
 						aria-label="Read more about NameCheap"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							NameCheap
-						</span>
-					</a>
+					>
+						NameCheap
+					</Button>
 				</Item>
 				<Item title="GitHub">
 					<p>
@@ -496,14 +452,13 @@
 						repositories, but I’m still paying for it. A good daily service
 						deserves it.
 					</p>
-					<a
-						href="https://www.github.com"
+					<Button
+						color="white"
+						to="https://www.github.com"
 						aria-label="Read more about GitHub"
-						class="button button--magentalight button--default"
-						><span class="button__text">
-							GitHub
-						</span>
-					</a>
+					>
+						GitHub
+					</Button>
 				</Item>
 			</Row>
 		</Content>
@@ -511,23 +466,15 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
-import { Content, Row, Item, Heading } from '@/components';
+import { Content, Row, Item, Heading, Button } from '@/components';
 
 export default Vue.extend({
 	components: {
 		Content,
 		Heading,
 		Row,
-		Item
+		Item,
+		Button
 	}
 });
 </script>
-<style lang="scss">
-.content-item {
-	transform: scale(0.5);
-	transition: transform 0.5s ease-in-out;
-	.is-inview & {
-		transform: scale(1);
-	}
-}
-</style>

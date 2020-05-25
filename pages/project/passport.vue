@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Passport</h1>
 		</Heading>
-		<Content class="background--plum">
+		<Content background="plum">
 			<h2>
 				Which passport combination is the strongest?
 			</h2>

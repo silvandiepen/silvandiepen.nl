@@ -1,11 +1,29 @@
 // import { NavigationType } from './footer.types';
+export const FastNavigationData: any = [
+	{
+		title: 'About Me',
+		link: '/me'
+	},
+	{
+		title: 'Projects',
+		link: '/project'
+	},
+	{
+		title: 'Blog',
+		link: '/blog'
+	},
+	{
+		title: 'Snippets',
+		link: '/snippets'
+	}
+];
 export const NavigationData: any = [
 	{
 		title: 'About',
 		children: [
 			{
 				name: 'About me',
-				link: '/about/me',
+				link: '/me',
 				active: true
 			},
 			{
@@ -15,12 +33,12 @@ export const NavigationData: any = [
 			},
 			{
 				name: 'This website',
-				link: '/about/this',
+				link: '/this',
 				active: true
 			},
 			{
 				name: 'Get in touch!',
-				link: '/about/contact',
+				link: '/contact',
 				active: true
 			}
 		]
@@ -60,11 +78,6 @@ export const NavigationData: any = [
 				active: true
 			},
 			{
-				name: "Henri's",
-				link: '/project/henris',
-				active: true
-			},
-			{
 				name: 'Silicons',
 				link: '/project/silicons',
 				active: true
@@ -82,11 +95,16 @@ export const NavigationData: any = [
 			{
 				name: 'Aybu',
 				link: '/project/aybu',
-				active: false
+				active: true
 			},
 			{
 				name: 'Icon Components',
 				link: '/project/icon-components',
+				active: true
+			},
+			{
+				name: 'DrawType',
+				link: '/project/drawtype',
 				active: true
 			}
 		]
@@ -184,21 +202,21 @@ export const NavigationData: any = [
 				name: 'Chernobyl',
 				link: '/photography/chernobyl',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/1267.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/1267.jpg',
 				active: true
 			},
 			{
 				name: 'Frutas',
 				link: '/photography/frutas',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/tomato1.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/tomato1.jpg',
 				active: true
 			},
 			{
 				name: 'Malta',
 				link: '/photography/malta',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/IMG_1325.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/IMG_1325.jpg',
 				active: true
 			},
 			{
@@ -210,21 +228,21 @@ export const NavigationData: any = [
 				name: 'Korsou',
 				link: '/photography/korsou',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/curacao_3.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/curacao_3.jpg',
 				active: true
 			},
 			{
 				name: 'Winter',
 				link: '/photography/winter',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/winter02.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/winter02.jpg',
 				active: true
 			},
 			{
 				name: 'Prisoned Zoo',
 				link: '/photography/prison-zoo',
 				image:
-					'https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/hawk.jpg',
+					'https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/hawk.jpg',
 				active: true
 			}
 		]

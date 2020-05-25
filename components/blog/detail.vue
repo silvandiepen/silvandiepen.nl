@@ -1,11 +1,10 @@
 <template>
 	<div>
-		<Heading v-if="article" class="background--white">
+		<Heading v-if="article">
 			<h1>{{ article.title }}</h1>
 		</Heading>
-		<Content v-if="article" class="background--beige">
-			<!-- <Markdown :source="article.content" /> -->
-			{{ article.content }}
+		<Content v-if="article">
+			<Markdown :source="article.content" />
 		</Content>
 	</div>
 </template>
@@ -13,18 +12,26 @@
 <script lang="ts">
 import Vue from 'vue';
 import { articleType } from '@/types';
-import { Heading, Content } from '@/components';
-
+import { Heading, Content } from '@/components/Layout';
+import { Markdown } from '@/components';
 export default Vue.extend({
 	components: {
 		Heading,
-		// Markdown,
+		Markdown,
 		Content
+	},
+	props: {
+		articleUri: {
+			type: String,
+			default: null
+		}
 	},
 	computed: {
 		article(): articleType {
 			return this.$store.getters['articles/getArticle'](
-				this.$route.params.article
+				this.$props.articleUri
+					? this.$props.articleUri
+					: this.$route.params.article
 			);
 		}
 	}

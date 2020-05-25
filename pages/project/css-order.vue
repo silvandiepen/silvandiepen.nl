@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>CSS Order</h1>
 		</Heading>
-		<Content class="background--army">
+		<Content background="army">
 			<h2>
 				Neatly order your stylesheets in the right order.
 			</h2>

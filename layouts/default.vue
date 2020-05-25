@@ -41,6 +41,8 @@ export default {
 	watch: {},
 	mounted() {
 		this.$store.dispatch('articles/loadArticles');
+		this.$store.dispatch('snippets/loadSnippets');
+
 		window.addEventListener('scroll', () => {
 			this.scroll.last = window.scrollY;
 

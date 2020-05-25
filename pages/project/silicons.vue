@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Silicons</h1>
 		</Heading>
-		<Content class="background--yellow">
+		<Content background="yellow">
 			<h2>
 				An icon set completely made using CSS
 			</h2>
@@ -15,7 +15,7 @@
 				them just using css?
 			</h4>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<Row>
 				<Item title="The rules">
 					In order to make something out of this, I gave myself a few rules.

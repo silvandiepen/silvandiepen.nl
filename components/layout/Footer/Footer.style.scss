@@ -5,10 +5,7 @@
 	position: relative;
 	background-color: black;
 	color: color(White);
-	padding: grid(2);
-	@media #{$xlarge-up} {
-		padding: grid(2 0);
-	}
+
 	h6 {
 		opacity: 0.5;
 		a {
@@ -26,6 +23,18 @@
 				margin-top: 4em;
 			}
 		}
+	}
+	&__nav {
+		@media #{$large-down} {
+			padding: 2rem !important;
+		}
+		padding: grid(2 0);
+	}
+	&__fastnav {
+		position: relative;
+		z-index: 2;
+		background-color: color(Yellow);
+		color: black;
 	}
 	&__backgrounds {
 		position: absolute;
@@ -60,6 +69,61 @@
 				}
 			}
 		}
+	}
+}
+.fastnav {
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		display: block;
+		& + & {
+			margin-left: 1em;
+		}
+	}
+	&__link {
+		position: relative;
+		display: block;
+		border-radius: $base-border-radius;
+
+		text-decoration: none;
+		padding: 1em;
+		&:hover,
+		&.active--exact {
+			&::before {
+				transform: translate(-50%, -50%) scale(1);
+				opacity: 1;
+			}
+		}
+		&.active--exact {
+			color: color(Yellow);
+			&::before {
+				background-color: color(Black);
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			background-color: white;
+			transform: translate(-50%, -50%) scale(0.5);
+			opacity: 0;
+			transition: transform $base-transition ease-in-out,
+				opacity $base-transition ease-in-out;
+		}
+	}
+	&__text {
+		position: relative;
+		z-index: 2;
+		display: block;
+		color: currentColor;
+		font-size: 1.5em;
+		line-height: 1;
 	}
 }
 .nav {

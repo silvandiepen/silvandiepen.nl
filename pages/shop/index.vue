@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Shop</h1>
 		</Heading>
-		<Content class="background--plum">
+		<Content background="plum">
 			<h2>
 				I'd sell your mother..
 			</h2>
@@ -15,7 +15,7 @@
 			</h4>
 			<p></p>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<Row>
 				<Item title="Colors">
 					A full colorset of all basic colors. In different formats, from json,

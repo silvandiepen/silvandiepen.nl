@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { ApolloLink, Observable } from 'apollo-link';
+import { Observable, ApolloLink } from 'apollo-link';
 
 const opts = { onlyErrors: false };
 

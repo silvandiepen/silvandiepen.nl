@@ -1,11 +1,11 @@
 <template>
 	<main class="page page--me">
-		<Heading class="background--turquoise" title="This website">
+		<Heading background="turquoise" title="This website">
 			<h2>
 				I create visual things using code and illustrations.
 			</h2>
 		</Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>And with "this".. I mean this website.</h3>
 			<h4>
 				Yeah… there is quite some to tell about this website. Which is iteration
@@ -19,7 +19,7 @@
 				doesn’t really show what I mean with that.
 			</p>
 		</Content>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<h3>What it's build on..</h3>
 			<Row>
 				<Item title="Vue">

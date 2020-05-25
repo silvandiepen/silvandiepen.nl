@@ -1,21 +1,21 @@
 <template>
 	<main class="page page--winter">
 		<Heading title="Winter"> </Heading>
-		<Content class="background--icelight">
+		<Content background="icelight">
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/Macaca.png"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/Macaca.png"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/lion2.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/lion2.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/lion1.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/lion1.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/hawk.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/hawk.jpg"
 			/>
 			<img
-				src="https://s3-eu-central-1.amazonaws.com/api.silvandiepen.nl//wp-content/uploads/2019/09/blackwolf.jpg"
+				src="https://s3-eu-central-1.amazonaws.com/cdn.silvandiepen.nl/img/blackwolf.jpg"
 			/>
 		</Content>
 	</main>

@@ -1,7 +1,7 @@
 <template>
 	<div class="page-heading">
 		<div class="row center">
-			<div class="column small-full medium-two-third">
+			<div class="column small-full medium-two-third xlarge-half">
 				<div class="content">
 					<h1 v-if="title">
 						<span v-for="(word, idx) in compiledTitle" :key="idx">

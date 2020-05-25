@@ -3,7 +3,7 @@
 		<Heading>
 			<h1>Icon Components</h1>
 		</Heading>
-		<Content class="background--orange">
+		<Content background="orange">
 			<h2>
 				Generate Components from your set of SVG icons.
 			</h2>
