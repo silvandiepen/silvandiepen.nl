@@ -21,7 +21,7 @@ static/sw.js
 static/icons
 
 # Environmental
-.env.dev
-.env.prd
-.env.tst
+config/.env.dev
+config/.env.tst
+config/.env.prd
 .env

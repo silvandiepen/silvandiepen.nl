@@ -66,7 +66,7 @@ export default Vue.extend({
 		snippets: {
 			get() {
 				return this.$store.getters['snippets/getSnippets']
-					.filter((snippet) =>
+					.filter((snippet: snippetType) =>
 						this.currentTag !== null
 							? snippet.meta.tags.includes(this.currentTag)
 							: true
