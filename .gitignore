@@ -22,6 +22,4 @@ static/icons
 
 # Environmental
 config/.env.dev
-config/.env.tst
-config/.env.prd
 .env
