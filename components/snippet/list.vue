@@ -52,7 +52,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { Content } from '@/components/layout/Content';
+import { Content } from '@/components/Layout/Content';
 
 export default Vue.extend({
 	components: {

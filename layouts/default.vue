@@ -8,7 +8,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import { Header, Footer } from '~/components/layout';
+import { Header, Footer } from '~/components/Layout';
 
 export default {
 	transition: 'page',

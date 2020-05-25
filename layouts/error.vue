@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import Heading from '~/components/layout/heading';
+import Heading from '~/components/Layout/heading';
 export default Vue.extend({
 	components: {
 		// Content,
