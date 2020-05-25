@@ -15,6 +15,7 @@ import { articleType } from '@/types';
 import { Heading, Content } from '@/components/Layout';
 import { Markdown } from '@/components';
 export default Vue.extend({
+	name: 'BlogDetail',
 	components: {
 		Heading,
 		Markdown,
@@ -26,6 +27,7 @@ export default Vue.extend({
 			default: null
 		}
 	},
+
 	computed: {
 		article(): articleType {
 			return this.$store.getters['articles/getArticle'](
