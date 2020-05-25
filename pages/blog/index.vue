@@ -13,20 +13,10 @@ export default {
 		BlogList,
 		BlogDetail
 	},
-	// async asyncData({ store }) {
-	// 	await store.dispatch('articles/loadArticles');
-	// },
 	computed: {
 		lastArticle() {
-			return this.$store.getters['articles/getArticles'][0];
-		},
-		articles() {
-			return [];
-			// return this.$store.getters['articles/getArticles'];
+			return this.$store.getters['articles/lastArticle'];
 		}
-	},
-	mounted() {
-		console.log(this.lastArticle);
 	}
 };
 </script>

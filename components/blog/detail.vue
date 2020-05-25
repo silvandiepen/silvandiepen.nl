@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { articleType } from '@/types';
+import { Article } from '@/types';
 import { Heading, Content } from '@/components/Layout';
 import { Markdown } from '@/components';
 export default Vue.extend({
@@ -29,7 +29,7 @@ export default Vue.extend({
 	},
 
 	computed: {
-		article(): articleType {
+		article(): Article {
 			return this.$store.getters['articles/getArticle'](
 				this.$props.articleUri
 					? this.$props.articleUri

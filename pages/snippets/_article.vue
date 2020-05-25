@@ -21,7 +21,7 @@ export default Vue.extend({
 	},
 	computed: {
 		snippet: {
-			get() {
+			get(): string {
 				return this.$store.getters['snippets/getSnippet'](
 					this.$route.params.article
 				);

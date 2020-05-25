@@ -36,6 +36,9 @@ export const getters = {
 	},
 	getArticle: (state) => (uri) => {
 		return state.articles.find((article) => article.uri === uri);
+	},
+	lastArticle(state) {
+		return orderBy(state.articles, 'date', 'desc')[0];
 	}
 };
 export const actions = {
