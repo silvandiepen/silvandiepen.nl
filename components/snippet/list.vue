@@ -10,13 +10,12 @@
 					v-if="snippet.meta.category"
 					class="snippet-list__category"
 					:class="{
-						'snippet-list__category--active':
-							currentCategory === snippet.meta.category
+						'snippet-list__category--active': category === snippet.meta.category
 					}"
 					@click="
-						currentCategory === snippet.meta.category
-							? (currentCategory = null)
-							: (currentCategory = snippet.meta.category)
+						category === snippet.meta.category
+							? (category = '')
+							: (category = snippet.meta.category)
 					"
 					>{{ snippet.meta.category }}</span
 				>
@@ -30,18 +29,16 @@
 					class="snippet-list__tags"
 				>
 					<li
-						v-for="(tag, idt) in snippet.meta.tags"
+						v-for="(tagitem, idt) in snippet.meta.tags"
 						:key="idt"
 						class="snippet-list__tag"
-						:class="{ 'snippet-list__tag--active': currentTag === tag }"
+						:class="{ 'snippet-list__tag--active': tag === tagitem }"
 					>
 						<button
 							class="snippet-list__tag-button"
-							@click="
-								currentTag === tag ? (currentTag = null) : (currentTag = tag)
-							"
+							@click="tag === tagitem ? (tag = '') : (tag = tagitem)"
 						>
-							{{ tag }}
+							{{ tagitem }}
 						</button>
 					</li>
 				</ul>
@@ -53,29 +50,23 @@
 <script lang="ts">
 import Vue from 'vue';
 import { Content } from '@/components/Layout/Content';
+import { Article } from '@/types';
 
 export default Vue.extend({
 	components: {
 		Content
 	},
 	data: () => ({
-		currentTag: null,
-		currentCategory: null
+		tag: '',
+		category: ''
 	}),
 	computed: {
 		snippets: {
-			get() {
-				return this.$store.getters['snippets/getSnippets']
-					.filter((snippet: snippetType) =>
-						this.currentTag !== null
-							? snippet.meta.tags.includes(this.currentTag)
-							: true
-					)
-					.filter((snippet) =>
-						this.currentCategory !== null
-							? snippet.meta.category === this.currentCategory
-							: true
-					);
+			get(): Article[] {
+				return this.$store.getters['snippets/getSnippets']({
+					tag: this.tag,
+					category: this.category
+				});
 			}
 		}
 	}

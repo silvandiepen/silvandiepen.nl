@@ -27,7 +27,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { articleType } from '@/types';
+import { Article } from '@/types';
 import { Content } from '@/components/Layout';
 export default Vue.extend({
 	name: 'BlogList',
@@ -39,7 +39,7 @@ export default Vue.extend({
 		await store.dispatch('articles/loadArticles');
 	},
 	computed: {
-		articleList(): articleType[] {
+		articleList(): Article[] {
 			return this.$store.getters['articles/getArticles'];
 		}
 	},

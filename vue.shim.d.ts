@@ -9,7 +9,3 @@ declare module 'vue/types/vue' {
 		): ExtendedVue<V, Data, Methods, Computed, Props>;
 	}
 }
-declare module '*.gql' {
-	const content: any;
-	export default content;
-}
