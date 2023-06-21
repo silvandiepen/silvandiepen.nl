@@ -27,7 +27,7 @@
 		"babel-runtime": "^6.26.0",
 		"graphql-tag": "^2.10.3",
 		"guyn-style": "0.1.0-alpha.12",
-		"nuxt": "^2.8.1",
+		"nuxt": "^3.4.3",
 		"stylelint-logical-order": "0.0.8",
 		"vue-markdown": "^2.2.4",
 		"vuex-persist": "^2.2.0"
